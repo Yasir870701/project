@@ -152,13 +152,20 @@
   </VCol>
 </VCol>
 <VRow>
-  <VCol cols="12" class="pa-0" style="background-color:#fff ; height: 891px; display: flex; align-items: center; z-index: 999;">
-
+  <VCol class="pa-0" cols="12" style="background-color:#fff ; height: 891px; display: flex; z-index: 999; align-items: center;justify-content: center;">
+    <VCard cols="12" class="pa-0 elevation-5" style="width: 90%;height: 75%; display: flex; background-color:#E6E6E6;"> 
+      <VImg style="width: 35%;" cover src="../../assets/重訓6.jpg"></VImg>
+    <div cols="9" style="width: 80%; border: 1px solid black;">
+      <div cols="12" style="height: 80%; width: 80%;background-color:aqua ; display: flex; align-items: center !important;justify-content: center !important;">
+        
+      </div>
+    </div>
+    </VCard>
   </VCol>
 </VRow>
 <VRow>
   <VCol cols="12" class="pa-0" style="background-color:#9da4a8 ; height: 891px; display: flex; align-items: center; z-index: 999;">
-
+    
   </VCol>
 </VRow>
 <VRow>
