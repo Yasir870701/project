@@ -1,6 +1,6 @@
 <template>
   <VRow>
-    <VCol cols="12" class="pa-16 ma-2" style="height: 891px;background-color: #fff; z-index: 999;">
+    <VCol cols="12" class="pa-16 ma-2" style="height: 100;background-color: #fff; z-index: 999;">
       <div style=" display: flex; align-items: center;">
         <div style="width: 42%;">
         <VImg class="animate__animated animate__bounceInLeft animate__slower" src="../../assets/transform.gif"></VImg>
@@ -116,24 +116,14 @@
         找尋適合您的健身規劃
       </div>
       <pre class="mr-1 text-lg-h4" style="position: relative; margin-top: 2%; right: 5%; color: #fff;">
-        開始您的健身旅程，找出最適合您的健身計劃！
+        開始您的健身旅程，
+        找出最適合您的健身計劃！
         無論是獨特的重量訓練、
         充滿活力的有氧運動，
         或是平衡的飲食，
         還有其他多種內容，
         這裡都能幫助您打造專屬自己的訓練方式！
       </pre>
-        <v-card-actions>
-        <VBtn
-      id="hover-class"
-      class="px-16 mx-9 text-lg-h5"
-      to="/orders"
-      prepend-icon="mdi-arrow-right-thick"
-      style="color: #fff; margin-top: 30%; left: 50%;"
-    >
-      前往看全部文章
-    </VBtn>
-      </v-card-actions>
         </div>
     </v-card-item>
   </v-card>
@@ -152,25 +142,47 @@
   </VCol>
 </VCol>
 <VRow>
-  <VCol class="pa-0" cols="12" style="background-color:#fff ; height: 891px; display: flex; z-index: 999; align-items: center;justify-content: center;">
-    <VCard cols="12" class="pa-0 elevation-5" style="width: 90%;height: 75%; display: flex; background-color:#E6E6E6;"> 
-      <VImg style="width: 35%;" cover src="../../assets/重訓6.jpg"></VImg>
-    <div cols="9" style="width: 80%; border: 1px solid black;">
-      <div cols="12" style="height: 80%; width: 80%;background-color:aqua ; display: flex; align-items: center !important;justify-content: center !important;">
-        
-      </div>
+  <VCol cols="12" class="pa-0" style=" height: 205px; display: flex; align-items: center; z-index: 999;">
+    <div
+    id="hover-class"
+    class="text-lg-h4"
+    style="color: #333;width: 33.333%;height: 100%; background-color: #333333; border-radius: 0; display: flex; align-items: center;justify-content:center; text-decoration: none;"
+    >
+    <VIcon class="pr-13" icon="mdi-weight-lifter"></VIcon>
+    <span><a href="#section">我為何會創建這個網站</a></span>
+    <VIcon class="pl-13" icon="mdi-arm-flex"></VIcon>
     </div>
-    </VCard>
+        <RouterLink
+      id="hover-class2"
+      class="pa-0 mx-0 text-lg-h4"
+      to="/orders"
+      prepend-icon="mdi-arrow-right-thick"
+      style="text-decoration: none; color: #000;width: 66.667%; height: 100%; background-color:#fff ; border-radius: 0;"
+    >
+    查看全部文章
+        </RouterLink>
   </VCol>
 </VRow>
 <VRow>
-  <VCol cols="12" class="pa-0" style="background-color:#9da4a8 ; height: 891px; display: flex; align-items: center; z-index: 999;">
+  <VCol cols="12" class="pa-0" style="background-color:#9da4a8 ; height: 100vh; display: flex; align-items: center; z-index: 998;">
     
   </VCol>
 </VRow>
 <VRow>
-  <VCol cols="12" class="pa-0" style="background-color:#d32f2f ; height: 891px; display: flex; align-items: center; z-index: 999;">
+  <VCol cols="12" class="pa-0" style="background-color:#d32f2f ; height: 100vh; display: flex; align-items: center; z-index: 999;">
 
+  </VCol>
+</VRow>
+<VRow>
+  <VCol class="pa-0" cols="12" style="background-color:#fff ; height: 100vh; display: flex; z-index: 999; align-items: center;justify-content: center;">
+    <div id="section" cols="12" class="pa-0 elevation-5" style="width: 90%;height: 75%; display: flex; background-color:#E6E6E6;"> 
+      <VImg style="width: 33%;" cover src="../../assets/重訓6.jpg"></VImg>
+      <div class="" style=" display: flex; align-items: center; justify-content: center; width: 80%;">
+        <div class="py-10" style="border: 1px solid black; width: 80%; height: 100%;">
+          <div class="text-lg-h4" style="width: 100%; height: 5%; border: 1px solid black;"></div>
+        </div>
+      </div>
+    </div>
   </VCol>
 </VRow>
 </template>
@@ -235,8 +247,11 @@ const products = ref([]);
   object-fit: cover;
 }
 #hover-class:hover {
-  color: #ffeb3b !important;
-  transition: all 0.25s ease !important;
+  transition: all 0.4s ease !important;
+  color: #fff !important;
+}
+#hover-class span {
+  color: #ffffff !important;
 }
 .image-overlay {
   position: absolute;
@@ -249,15 +264,6 @@ const products = ref([]);
   color: #ffffff;
   text-align: center;
 }
-
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	background: #111;
-}
-
 .image {
 	transition: transform 0.5s ease;
 	
