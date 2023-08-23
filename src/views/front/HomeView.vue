@@ -115,7 +115,7 @@
         <div class="pa-7 text-xl-h3 font-weight-black" style="color: #fff; margin-top: 2%;">
         找尋適合您的健身規劃
       </div>
-      <pre class="mr-1 text-lg-h4" style="position: relative; margin-top: 2%; right: 5%; color: #fff;">
+      <pre class="ml-5 text-lg-h5" style="position: relative; margin-top: 2%; right: 5%; color: #fff;">
         開始您的健身旅程，
         找出最適合您的健身計劃！
         無論是獨特的重量訓練、
@@ -146,49 +146,78 @@
     <div
     v-scroll-to="'#section'"
     id="hover-class"
-    class="text-lg-h4"
-    style="color: #333;width: 33.333%;height: 100%; background-color: #333333; border-radius: 0; display: flex; align-items: center;justify-content:center; text-decoration: none;"
+    class="text-xl-h5"
+    style="cursor: pointer; color: #333;width: 33.333%;height: 100%; background-color: #333333; border-radius: 0; display: flex; align-items: center;justify-content:center; text-decoration: none;"
     >
     <VIcon class="pr-13" icon="mdi-weight-lifter"></VIcon>
-    <span>我為何會創建這個網站</span>
+    <span class="font-weight-bold">我為何會創建這個網站</span>
     <VIcon class="pl-13" icon="mdi-arm-flex"></VIcon>
     </div>
         <RouterLink
       id="hover-class2"
-      class="pa-0 mx-0 text-lg-h4"
+      class="pa-0 mx-0"
       to="/orders"
       prepend-icon="mdi-arrow-right-thick"
-      style="text-decoration: none; color: #000;width: 66.667%; height: 100%; background-color:#fff ; border-radius: 0;"
+      style="text-decoration: none;display: flex; align-items: center;justify-content: center; color: #000;width: 66.667%; height: 100%; background-color:#fff ; border-radius: 0;"
     >
-    查看全部文章
+    <p class="text-lg-h4 font-weight-bold">探索全部文章</p>
+    <div id="hover-class2-date" class="pl-12 ml-10 font-weight-bold" style="text-align: center;">
+    <p>23</p>
+    <p>Aug</p>
+    </div>
+      <p class="pl-8 text-lg-h5 font-weight-bold">持續更新，掌握最新的運動資訊!</p>
+      <VIcon class="pl-15 ml-15" icon="mdi-dumbbell"></VIcon>
         </RouterLink>
   </VCol>
 </VRow>
 <VRow>
-  <VCol cols="12" class="pa-0" style="background-color:#9da4a8 ; height: 100vh; display: flex; align-items: center; z-index: 998;">
-    
+  <VCol cols="12" class="pa-0" style="background-color:#fff ; height: 78vh; display: flex; align-items: center; z-index: 998;">
+    <div class="pa-0" style="width: 56.667%;height: 100%;object-fit: cover;">
+      <swiper
+    :pagination="{
+      type: '',
+    }"
+    :navigation="false"
+    :modules="modules"
+    class="mySwiper"
+    :autoplay="{
+            delay: 3000,
+            disableOnInteraction: false
+          }"
+    :effect="'fade'"
+  >
+    <swiper-slide id="swiper2"><VImg src="../../assets/重訓1-1.jpg"></VImg></swiper-slide>
+    <swiper-slide id="swiper2"><VImg src="../../assets/重訓1-2.jpg"></VImg></swiper-slide>
+    <swiper-slide id="swiper2"><VImg src="../../assets/重訓1-3.jpg"></VImg></swiper-slide>
+  </swiper>
+    </div>
+    <div class="pa-0" style="width: 43.333%;height: 100%; background-color: #fff;"></div>
   </VCol>
 </VRow>
 <VRow>
   <VCol cols="12" class="pa-0" style="background-color:#d32f2f ; height: 100vh; display: flex; align-items: center; z-index: 999;">
-
+    <VImg src="../../assets/under-construction2.gif"></VImg>
   </VCol>
 </VRow>
 <VRow>
-  <VCol class="pa-0" cols="12" style="background-color:#fff ; height: 100vh; display: flex; z-index: 999; align-items: center;justify-content: center;">
+  <VCol class="pa-0" cols="12" style="position: relative; background-color:#fff ; height: 100vh; display: flex; z-index: 998; align-items: center;justify-content: center;">
+    <div style="position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 999;"><VImg src="../../assets/under-construction2.gif"></VImg></div>
     <div id="section" cols="12" class="pa-0 elevation-5" style="width: 90%;height: 75%; display: flex; background-color:#E6E6E6;"> 
       <VImg style="width: 33%;" cover src="../../assets/重訓6.jpg"></VImg>
       <div class="" style=" display: flex; align-items: center; justify-content: center; width: 80%;">
         <div class="py-10" style="border: 1px solid black; width: 80%; height: 100%;">
           <div class="text-lg-h4" style="width: 100%; height: 5%; border: 1px solid black;"></div>
+          </div>
         </div>
       </div>
-    </div>
+  </VCol>
+</VRow>
+<VRow>
+  <VCol cols="12" class="pa-0" style="background-color:#333 ; height: 100vh; display: flex; align-items: center; z-index: 999;">
+    <VImg src="../../assets/under-construction2.gif"></VImg>
   </VCol>
 </VRow>
 </template>
-  
-
 
 <script setup>
 import { api } from '@/plugins/axios'
@@ -253,6 +282,14 @@ const products = ref([]);
 }
 #hover-class span {
   color: #ffffff !important;
+}
+#hover-class2:hover {
+  transition: all 0.4s ease !important;
+  background-color: #c4c8cc !important;
+  color: #fff !important;
+}
+#hover-class2:hover #hover-class2-date {
+  color: #d32f2f !important;
 }
 .image-overlay {
   position: absolute;

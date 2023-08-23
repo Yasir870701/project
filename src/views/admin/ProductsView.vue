@@ -2,7 +2,7 @@
   <VContainer>
     <VRow>
       <VCol cols="12">
-        <h1 class="text-center">商品管理</h1>
+        <h1 class="text-center">文章管理</h1>
       </VCol>
       <!-- <VDivider></VDivider> -->
       <VCol cols="11" >
@@ -44,7 +44,7 @@
       </VCol>
     </VRow>
   </VContainer>
-  <VDialog persistent width="450px" v-model="dialog">
+  <VDialog persistent width="800px" v-model="dialog">
     <VForm :disabled="isSubmitting" @submit.prevent="submit">
       <VCard>
         <VCardTitle>{{ dialogId.length > 0 ? '編輯項目' : '新增項目' }}</VCardTitle>
@@ -216,13 +216,13 @@ const schema = yup.object({
     .string()
     .required('缺少主題'),
   // price: yup
-  //   .number()
+    // .number()
   //   .typeError('缺少價格')
   //   .required('缺少價格')
   //   .min(0, '價格錯誤'),
   description: yup
     .string()
-    .required('缺少說明'),
+    .required('缺少'),
   category: yup
     .string()
     .required('缺少分類')

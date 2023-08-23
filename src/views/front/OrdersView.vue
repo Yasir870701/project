@@ -1,9 +1,6 @@
 <template>
   <VContainer>
     <VRow>
-      
-      
-      
       <VCol
         cols="12" md="6" lg="3"
         v-for="product in products"

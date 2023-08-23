@@ -42,7 +42,7 @@ const routes = [
         name: 'Product',
         component: () => import(/* webpackChunkName: "product" */ '@/views/front/ProductView.vue'),
         meta: {
-          title: 'Transform! | 商品',
+          title: 'Transform! | 文章',
           login: false,
           admin: false
         }
@@ -52,7 +52,7 @@ const routes = [
         name: 'Cart',
         component: () => import(/* webpackChunkName: "cart" */ '@/views/front/CartView.vue'),
         meta: {
-          title: 'Transform! | 購物車',
+          title: 'Transform! | 收藏',
           login: true,
           admin: false
         }
@@ -62,7 +62,7 @@ const routes = [
         name: 'Orders',
         component: () => import(/* webpackChunkName: "orders" */ '@/views/front/OrdersView.vue'),
         meta: {
-          title: 'Transform! | 訂單',
+          title: 'Transform! | 文章',
           login: false,
           admin: false
         }
@@ -88,7 +88,7 @@ const routes = [
         name: 'AdminProducts',
         component: () => import(/* webpackChunkName: "admin-products" */ '@/views/admin/ProductsView.vue'),
         meta: {
-          title: 'Transform! | 商品管理',
+          title: 'Transform! | 文章管理',
           login: true,
           admin: true
         }

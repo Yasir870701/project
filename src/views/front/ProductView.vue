@@ -4,17 +4,19 @@
       <VCol cols="12">
         <!-- <h1>{{ product.name }}</h1> -->
       </VCol>
-      <VCol cols="12" md="2" class="text-center d-flex justify-center align-center">
-        <VImg :src="product.image"></VImg>
+      <VCol cols="12" class="text-center d-flex align-center">
+        <div style="width: 15%;">  
+          <VImg :src="product.image"></VImg>
+        </div>
       </VCol>
-      <VCol cols="auto" >
+      <VCol cols="12">
         <!-- <p>${{ product.price }}</p> -->
         <!-- <pre class="overflow-auto">{{ product.description }}</pre> -->
         <v-sheet
     rounded
     :elevation="8"
     class="pa-8 overflow-auto"
-    max-width="1800"
+    max-width="1400"
   >
     <h4 class="text-h3 font-weight-black mb-8">{{ product.name }}</h4>
 
