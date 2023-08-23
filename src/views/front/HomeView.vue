@@ -144,12 +144,13 @@
 <VRow>
   <VCol cols="12" class="pa-0" style=" height: 205px; display: flex; align-items: center; z-index: 999;">
     <div
+    v-scroll-to="'#section'"
     id="hover-class"
     class="text-lg-h4"
     style="color: #333;width: 33.333%;height: 100%; background-color: #333333; border-radius: 0; display: flex; align-items: center;justify-content:center; text-decoration: none;"
     >
     <VIcon class="pr-13" icon="mdi-weight-lifter"></VIcon>
-    <span><a href="#section">我為何會創建這個網站</a></span>
+    <span>我為何會創建這個網站</span>
     <VIcon class="pl-13" icon="mdi-arm-flex"></VIcon>
     </div>
         <RouterLink

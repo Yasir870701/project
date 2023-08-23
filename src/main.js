@@ -16,8 +16,14 @@ import { registerPlugins } from '@/plugins'
 // Styles
 import './assets/main.sass'
 
+import VueScrollTo from 'vue-scrollto'
+
 const app = createApp(App)
 
 registerPlugins(app)
 
+app.use(VueScrollTo)
+
 app.mount('#app')
+
+
