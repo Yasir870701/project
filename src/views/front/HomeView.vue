@@ -160,7 +160,7 @@
       prepend-icon="mdi-arrow-right-thick"
       style="text-decoration: none;display: flex; align-items: center;justify-content: center; color: #000;width: 66.667%; height: 100%; background-color:#fff ; border-radius: 0;"
     >
-    <p class="text-lg-h4 font-weight-bold">探索全部文章123</p>
+    <p class="text-lg-h4 font-weight-bold">探索全部文章</p>
     <div id="hover-class2-date" class="pl-12 ml-10 font-weight-bold" style="text-align: center;">
     <p>23</p>
     <p>Aug</p>
